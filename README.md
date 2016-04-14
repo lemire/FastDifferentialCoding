@@ -34,7 +34,7 @@ Usage
 compute_deltas_inplace(datain, length, 0);// compute the deltas in-place
 compute_prefix_sum_inplace(datain, length, 0);// under the delta computations (datain is back)
 ```
-
+See example.c for a complete example.
 
  Reference 
 -----------
