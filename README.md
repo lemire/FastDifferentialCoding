@@ -1,4 +1,5 @@
 # FastDifferentialCoding
+[![Build Status](https://travis-ci.org/lemire/FastDifferentialCoding.png)](https://travis-ci.org/lemire/FastDifferentialCoding)
 
 These functions compute fast successive differences, and recover the original
 values from the fast successive differences (i.e., they compute a prefix sum)
