@@ -41,6 +41,6 @@ See example.c for a complete example.
 -----------
 
  Daniel Lemire, Nathan Kurz, Leonid Boytsov, SIMD Compression and the Intersection of Sorted
- Integers, Software: Practice and Experience (to appear)
+ Integers, Software: Practice and Experience 46 (6), 2016.
  http://arxiv.org/abs/1401.6399
 
