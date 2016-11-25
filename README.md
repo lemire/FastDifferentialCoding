@@ -44,3 +44,8 @@ See example.c for a complete example.
  Integers, Software: Practice and Experience 46 (6), 2016.
  http://arxiv.org/abs/1401.6399
 
+There are other relevant references. For example, this code was used in Crane et al. (2017):
+
+Matt Crane, J.Shane Culpepper, Jimmy Lin, Joel Mackenzie and Andrew Trotman, A Comparison of Document-at-a-Time and Score-at-a-Time Query Evaluation, Proceedings of the Tenth ACM International Conference on Web Search and Data Mining (WSDM 2017), 2017.
+
+
