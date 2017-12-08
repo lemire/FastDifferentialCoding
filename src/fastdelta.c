@@ -28,7 +28,7 @@ void compute_deltas(const uint32_t * __restrict__ input, size_t length, uint32_t
     for(; i  < length/4; i++) {
         __m128i curr =  _mm_lddqu_si128 (( const __m128i*) input + i );
         __m128i delta = _mm_sub_epi32(curr,
-                                      _mm_or_si128(_mm_slli_si128(curr, 4), _mm_srli_si128(prev, 12)));
+                                     _mm_alignr_epi8(curr, prev, 12));
         _mm_storeu_si128((__m128i*)output + i,delta);
         prev = curr;
     }
@@ -48,7 +48,7 @@ void compute_deltas_inplace(uint32_t * buffer, size_t length, uint32_t starting_
     for(; i  < length/4; i++) {
         __m128i curr =  _mm_lddqu_si128 (( const __m128i*) buffer + i );
         __m128i delta = _mm_sub_epi32(curr,
-                                      _mm_or_si128(_mm_slli_si128(curr, 4), _mm_srli_si128(prev, 12)));
+                                      _mm_alignr_epi8(curr, prev, 12));
         _mm_storeu_si128((__m128i*)buffer + i,delta);
         prev = curr;
     }
